@@ -112,7 +112,7 @@ tbody:empty::after { content: "Send an order to see it parsed here."; display: b
   .keybar { grid-template-columns: 1fr; }
 }
 
-/* ---- "Created by Aarav Makhija" watermark + plain-language explainer ---- */
+/* ---- "Created by Aarov Makhija" watermark + plain-language explainer ---- */
 .made-by {
   position: fixed; z-index: 50;
   right: calc(12px + env(safe-area-inset-right, 0px));
