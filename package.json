@@ -1,0 +1,30 @@
+{
+  "name": "kirana-order-agent",
+  "version": "0.1.0",
+  "description": "Turns messy Hinglish WhatsApp grocery orders into a priced, stock-checked cart. Also an MCP server.",
+  "main": "src/agent.ts",
+  "scripts": {
+    "test": "node --test tests/*.test.ts",
+    "typecheck": "tsc",
+    "dev": "vite web",
+    "build": "vite build web --outDir ../dist --emptyOutDir",
+    "build:single": "SINGLE=1 vite build web --outDir ../dist-single --emptyOutDir",
+    "mcp": "node src/mcp/server.ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.13.0",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vite-plugin-singlefile": "^2.3.4"
+  },
+  "type": "module",
+  "bin": {
+    "kirana-mcp": "src/mcp/server.ts"
+  }
+}
