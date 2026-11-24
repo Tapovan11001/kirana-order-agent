@@ -8,6 +8,12 @@ This turns that into a priced cart matched to the shop's catalog, checks stock, 
 
 **Live:** {{live-url}} (the offline parser works without an API key)
 
+## How it works in 100 words
+
+Shop customers type orders on WhatsApp the way they talk: "2 kilo aata, ek amul butter bada wala". Kirana Order Agent reads the message, splits it into items, understands Hindi numbers and words like "bada" (big), forgives small typos, and matches each item to the shop's product list. Then it checks stock, adds up the bill and suggests a replacement for anything sold out. Finally it writes a friendly reply in the same Hinglish the customer used. Simple orders are handled instantly without any AI. When a message is confusing, Claude steps in and searches the catalog, but it can only pick products the shop actually sells.
+
+_Created by Aarav Makhija._
+
 ## Why
 
 Most small shops in India already take orders on WhatsApp. The shopkeeper reads every message, works out what "bada wala" means, checks the shelf, adds it up and types a reply. It's slow at peak hours and easy to get wrong. The hard part isn't the AI, it's the language: Hinglish, spelling variants (aata/atta, chini/cheeni), local names (double roti, sarson ka tel), brands used as product names (Maggi, Surf), and "do" meaning both "two" and "give".
